@@ -12,8 +12,8 @@ int main()
         2,
         1
     };
-    scanf("%d %d %d %d", &a.values[0][0], &a.values[0][1], &b.values[0][0], &b.values[1][0]);
+    scanf_s("%f %f %f %f", &a.values[0][0], &a.values[0][1], &b.values[0][0], &b.values[1][0]);
     Matrix c = Matrix_Multiply(a, b);
-    printf("%d", c.values[0][0]);
+    printf("%f", c.values[0][0]);
     return 0;
 }
